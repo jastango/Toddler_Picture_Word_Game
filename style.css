@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+
+:root {
+    --primary-color: #bee2bd;
+    --incorrect-color: #ecd3d3;
+    --correct-color: #93d091; 
+    --main-font: 'Varela Round', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:var(--primary-color);
+    font-family: var(--main-font);
+}
+
+.container {
+    margin: auto;
+    max-width: 1250px;
+    overflow: hidden;
+}
+
+img {
+    height: 199px;
+    width: 300px;
+}
+
+.photo {
+    height: 199px;
+    width: 300px;
+    margin: 2.5rem;
+    background: #f4f4f4;    
+}
+
+.current-photo {
+    height: 199px;
+    width: 300px;
+}
+
+.photo-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#word-bank {
+    margin: 2rem;
+    display: grid;
+    grid-template-columns: repeat(3, 215px);
+    grid-gap: 2rem;
+    text-align: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+#word-bank>input {
+    height: 90px;
+    width: 215px;
+    border: none;
+    font-size: 2rem;
+    background: #f4f4f4;
+}
+
+.message {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem;
+    padding-bottom: 1.5rem;
+    text-align: center;
+    height: 50px;
+}
+
+i {
+    color: #ffffff;
+    padding: 1.5rem;
+}
+
+#msg {
+    color: #ffffff;
+}
+
+@media screen and (max-width: 425px) {
+
+    img {
+        height: 150px;
+        width: 200px;
+    }
+
+    .photo-group {
+        margin-top: 1rem;
+    }
+
+    .photo {
+        height: 150px;
+        width: 200px;
+        margin: 1.5rem;
+    }
+
+    #word-bank {
+        margin: 1.5rem;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(1, 165px);
+    }
+
+    #word-bank>input {
+        height: 90px;
+        width: 165px;
+        border: none;
+        font-size: 1.5rem;
+    }
+
+    .message {
+        padding-bottom: 1rem;
+    }
+
+    #msg {
+        font-size: 1.25rem;
+    }
+}
+
+
+@media screen and (max-height: 425px) {
+
+    img {
+        height: 150px;
+        width: 200px;
+    }
+
+    .photo-group {
+        margin-top: 1rem;
+    }
+
+    .photo {
+        height: 150px;
+        width: 200px;
+        margin: .5rem;
+    }
+
+    
+    #word-bank {
+        margin: .5rem;
+        grid-gap: 1rem;
+        grid-template-columns: repeat(3, 165px);
+    }
+
+    #word-bank>input {
+        height: 90px;
+        width: 165px;
+        border: none;
+        font-size: 1.5rem;
+    }
+
+    .message {
+        padding-bottom: 0rem;
+    }
+
+    #msg {
+        font-size: 1.25rem;
+    }
+
+}
+
+
+.correct {
+
+    border: 10px solid var(--correct-color) !important;
+}
+
+.incorrect {
+    border: 10px solid var(--incorrect-color) !important;   
+}
+
+
+
+
+
+
+
+
+
+
